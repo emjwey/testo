@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    max-width: 1240px;
+    margin-inline: auto;
+    padding:20px;
+    color:#000;
+}
+header > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header div{
+    margin-right:auto
+}
+
+header ul {
+    display: flex;
+    gap:1rem;
+}
+
+header .logo {
+    height: 70px;;
+}
+header ul a{
+    padding: 2px 10px;
+    font-weight: 500;
+}

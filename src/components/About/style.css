@@ -1,0 +1,16 @@
+.about > div{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about .content {
+    padding-right: 30px;
+}
+.about.reverse .content{
+    order:2;
+    padding:0;
+    padding-left:30px
+}
+.about.reverse > div > div:last-child{
+    order:1
+}
