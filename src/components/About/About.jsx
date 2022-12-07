@@ -3,7 +3,7 @@ import './style.css'
 
 export const About = ({reverse}) =>{
     return (
-        <section id="about" className={`about ${reverse ? 'reverse': ''}`}>
+        <section id="about" className={`about with-image ${reverse ? 'reverse': ''}`}>
             <div>
                 <div className="content">
                     <h2>Lorem Epsum</h2>

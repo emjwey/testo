@@ -1,0 +1,28 @@
+#reviews{
+    background:rgb(36, 133, 189);
+    text-align: center;
+}
+#reviews > div{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin-inline:auto;
+    gap: 2rem;
+}
+
+#reviews article{
+    background:#fff;
+    padding:20px;
+    border-radius: 8px;
+}
+#reviews img{
+    max-width: 200px;
+    height: 200px;
+
+}
+
+@media (max-width:768px){
+    #reviews > div{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,3 +1,6 @@
+#services {
+    background:rgb(252, 252, 252)
+}
 .service-list{ 
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,10 +15,28 @@
 .service-list > div{
     position: relative;
 }
-.service-list img{
-
+.service-list > div:after{
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background:#000;
+    opacity: .4;
+    z-index: 1;
 }
+ 
 .service-list h3{
     position: absolute;
-    
+    top: 50%;
+    transform:translateY(-50%);
+    width: 100%;
+    z-index: 3;
+    color:#fff
+}
+@media (max-width:768px){
+    .service-list{
+        grid-template-columns: 1fr 1fr;
+    }
 }

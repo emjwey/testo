@@ -1,16 +1,43 @@
 .about > div{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    gap:3rem
 }
-
-.about .content {
-    padding-right: 30px;
+.about .content{
+    display:grid
+}
+.content .button{
+    margin-top:auto;
+    max-width: 14rem;
+    text-align: center;
+    
 }
 .about.reverse .content{
     order:2;
-    padding:0;
-    padding-left:30px
 }
 .about.reverse > div > div:last-child{
     order:1
+}
+
+.about img{
+    box-shadow: 20px 20px 0px 0px rgb(192, 192, 192), 
+                40px 40px 0px 0px rgba(0, 0, 0, 0.089);
+}
+.about.reverse img{
+    box-shadow: -20px 20px 0px 0px rgb(192, 192, 192), 
+                -40px 40px 0px 0px rgba(0, 0, 0, 0.089);
+}
+
+@media (max-width:768px){
+    .about > div{
+        grid-template-columns: 1fr;
+        gap:8rem;
+        text-align: center;
+    }
+    .about .content{
+        justify-items: center;
+    }
+    .about .content {
+        order:1
+    }
 }

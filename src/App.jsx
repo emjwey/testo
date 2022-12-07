@@ -5,6 +5,8 @@ import {Banner } from './components/Banner/Banner'
 import {About} from './components/About/About'
 import {Footer} from './components/Footer/Footer'
 import {Services} from './components/Services/Services'
+import {Reviews} from './components/Reviews/Reviews'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +18,7 @@ function App() {
         <About/>
         <Services/>
         <About reverse={true}/>
+        <Reviews/>
         <Footer/>
     </div>
   )
